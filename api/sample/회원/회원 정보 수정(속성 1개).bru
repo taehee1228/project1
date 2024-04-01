@@ -1,0 +1,22 @@
+meta {
+  name: 회원 정보 수정(속성 1개)
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{url}}/users/29
+  body: json
+  auth: none
+}
+
+query {
+  : 
+}
+
+body:json {
+  {
+    "phone": "010-5252-9629",
+    "name": "태희"
+  }
+}
